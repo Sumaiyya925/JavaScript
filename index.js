@@ -35,3 +35,4 @@ let customerPoints = 80;
 let typeOfCustomer = customerPoints>100 ? 'GOLD CUSTOMER' : 'SILVER CUSTOMER';
 console.log('The type of the customer is: ');
 console.log(typeOfCustomer);
+console.log("sumaiyya diwani");

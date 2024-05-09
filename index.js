@@ -39,22 +39,38 @@
 
 //EXERCISE
 
-let a = 'red';
-let b = 'blue';
+// let a = 'red';
+// let b = 'blue';
 
-console.log('The value of "a" before swapping is:');
-console.log(a);
+// console.log('The value of "a" before swapping is:');
+// console.log(a);
 
-console.log('The value of "b" before swapping is:');
-console.log(b);
+// console.log('The value of "b" before swapping is:');
+// console.log(b);
 
-let temp;
-temp = a;
-a = b;
-b = temp;
+// let temp;
+// temp = a;
+// a = b;
+// b = temp;
 
-console.log('The value of "a" after swapping is:');
-console.log(a);
+// console.log('The value of "a" after swapping is:');
+// console.log(a);
 
-console.log('The value of "b" after swapping is:');
-console.log(b);
+// console.log('The value of "b" after swapping is:');
+// console.log(b);
+
+//if/else
+
+let hour=20;
+
+if(hour>=6 && hour<12){
+    console.log('GOOD MORNING!');
+}
+
+else if(hour>=12 && hour<18){
+    console.log("GOOD AFTERNOON!");
+}
+
+else{
+    console.log("GOOD EVENING!");
+}

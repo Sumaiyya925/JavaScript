@@ -30,9 +30,31 @@
 
 //TERNARY OPERATOR
 
-console.log('TERNARY OPERATOR');
-let customerPoints = 80;
-let typeOfCustomer = customerPoints>100 ? 'GOLD CUSTOMER' : 'SILVER CUSTOMER';
-console.log('The type of the customer is: ');
-console.log(typeOfCustomer);
-console.log("sumaiyya diwani");
+// console.log('TERNARY OPERATOR');
+// let customerPoints = 80;
+// let typeOfCustomer = customerPoints>100 ? 'GOLD CUSTOMER' : 'SILVER CUSTOMER';
+// console.log('The type of the customer is: ');
+// console.log(typeOfCustomer);
+
+
+//EXERCISE
+
+let a = 'red';
+let b = 'blue';
+
+console.log('The value of "a" before swapping is:');
+console.log(a);
+
+console.log('The value of "b" before swapping is:');
+console.log(b);
+
+let temp;
+temp = a;
+a = b;
+b = temp;
+
+console.log('The value of "a" after swapping is:');
+console.log(a);
+
+console.log('The value of "b" after swapping is:');
+console.log(b);

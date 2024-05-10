@@ -221,3 +221,27 @@
 
 // const output = fizzBuzz('7');
 // console.log(output);
+
+//EXERCISE:CHECK SPEED
+
+checkSpeed(300);
+
+function checkSpeed(speed){
+    const speedLimit = 70;
+    const kmPerPoint = 5;
+
+    if(speed < speedLimit + kmPerPoint){
+        console.log("OK");
+        return;
+    }
+    //calculating points at every 5km
+    else{
+        const points = Math.floor((speed - speedLimit )/5);
+        if(points < 12){
+            console.log("YOUR POINTS ARE: ",points);
+        }
+        else
+        console.log("LISENCE SUSPENDED YOU DUMB!");
+    }
+}
+

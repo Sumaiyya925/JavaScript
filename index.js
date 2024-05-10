@@ -137,8 +137,33 @@
 
 //In for-in loops we need to define both things bur by using for-of loop we only pass the keyword and this loop is essential to use for arrays
 //like we only passed the variable 
-const colors2 = ['red','green','purple'];
+// const colors2 = ['red','green','purple'];
 
-for(let color of colors2){
-    console.log(color);
+// for(let color of colors2){
+//     console.log(color);
+// }
+
+
+
+//BREAK STATEMENT
+//jumps out of the loop
+// let i = 0;
+// while(i <= 10){
+
+//     if(i === 5) break;
+//     console.log(i);
+//     i++;
+// }
+
+//CONTINUE STATEMENT
+//jumps to the new iteration
+let i = 0;
+while(i<=10){
+
+    if(i%2 !== 0){
+        i++;
+        continue;
+    }
+    console.log(i);
+    i++;
 }

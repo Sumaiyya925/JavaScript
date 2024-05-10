@@ -157,13 +157,67 @@
 
 //CONTINUE STATEMENT
 //jumps to the new iteration
-let i = 0;
-while(i<=10){
+// let i = 0;
+// while(i<=10){
 
-    if(i%2 !== 0){
-        i++;
-        continue;
-    }
-    console.log(i);
-    i++;
-}
+//     if(i%2 !== 0){
+//         i++;
+//         continue;
+//     }
+//     console.log(i);
+//     i++;
+// }
+
+//EXERCISE
+//make a function that takes two numbers and gives the maximum of the two
+
+// function maxNumber(num1,num2){
+    // if(num1>num2)
+    //     return num1;
+    
+    // else
+    //    return num2;
+
+//    return (num1>num2) ? num1 : num2;
+    
+
+// }
+//  let maxNum = maxNumber(93,199);
+
+// console.log("THE MAXIMUM NUMBER IS: ",maxNum)
+
+//EXERCISE 2:
+
+// function isLandscape(width,height){
+
+    //we do not have to explicitly write true or false only return and condition can return true or false
+
+//     return (width > height);
+// }
+
+
+// console.log("result: ",isLandscape(900,500));
+
+//EXERCISE:FIZZBUZZ
+//not a number is NaN in javascript
+
+// function fizzBuzz(number){
+
+// if(typeof number !== 'number'){
+//         return NaN;
+//     }
+// else if((number%3 === 0) && (number%5 !== 0)){
+//     return 'fizz';
+// }
+// else if((number%5 === 0) && (number%3 !== 0)){
+//     return 'buzz';
+// }
+// else if((number%3 === 0) && (number%5 === 0)){
+//     return 'FizzBuzz'
+// }
+
+//     return number;
+// }
+
+// const output = fizzBuzz('7');
+// console.log(output);

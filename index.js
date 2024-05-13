@@ -263,17 +263,35 @@
 
 //EXERCISE: TRUTHY / FALSEY
 
-const array = [1,2,3,null,'',undefined,0,NaN];
+// const array = [1,2,3,null,'',undefined,0,NaN];
 
 //falsey values are null , empty string , undefined , 0 , NaN
 
-console.log(countTruthy(array));
+// console.log(countTruthy(array));
 
-function countTruthy(array){
-    let count = 0;
-    for(let value of array)
-        if(value)
-            count++;
-        return count;
+// function countTruthy(array){
+//     let count = 0;
+//     for(let value of array)
+//         if(value)
+//             count++;
+//         return count;
 
+// }
+
+//EXERCISE: OBJECT PROPERTIES ONLY STRING PRINT
+
+const movie = {
+    name : '12th fail',
+    year : 2023,
+    ratings : 5,
+    director :'abc'
+};
+
+showProperty(movie);
+
+function showProperty(obj){
+for( let property in obj){
+    if(typeof obj[property] === 'string')
+        console.log(property,obj[property]);
+}
 }

@@ -247,16 +247,33 @@
 
 //EXERCISE: EVEN OR ODD
 
-function showNumbers(limit){
+// function showNumbers(limit){
 
-    let i=0;
-    while(i<=5){
-            const result = (i%2 === 0 ? '"EVEN"':'"ODD"');
-        console.log(i,result);
-        i++;
+//     let i=0;
+//     while(i<=5){
+//             const result = (i%2 === 0 ? '"EVEN"':'"ODD"');
+//         console.log(i,result);
+//         i++;
     
-    }
+//     }
+
+// }
+
+// showNumbers(5);
+
+//EXERCISE: TRUTHY / FALSEY
+
+const array = [1,2,3,null,'',undefined,0,NaN];
+
+//falsey values are null , empty string , undefined , 0 , NaN
+
+console.log(countTruthy(array));
+
+function countTruthy(array){
+    let count = 0;
+    for(let value of array)
+        if(value)
+            count++;
+        return count;
 
 }
-
-showNumbers(5);

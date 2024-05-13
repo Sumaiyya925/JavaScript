@@ -250,7 +250,7 @@
 function showNumbers(limit){
 
     let i=0;
-    while(i<=20){
+    while(i<=5){
             const result = (i%2 === 0 ? '"EVEN"':'"ODD"');
         console.log(i,result);
         i++;
@@ -259,4 +259,4 @@ function showNumbers(limit){
 
 }
 
-showNumbers(20);
+showNumbers(5);

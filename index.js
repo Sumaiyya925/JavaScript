@@ -245,3 +245,18 @@
 //     }
 // }
 
+//EXERCISE: EVEN OR ODD
+
+function showNumbers(limit){
+
+    let i=0;
+    while(i<=10){
+            const result = (i%2 === 0 ? '"EVEN"':'"ODD"');
+        console.log(i,result);
+        i++;
+    
+    }
+
+}
+
+showNumbers(10);

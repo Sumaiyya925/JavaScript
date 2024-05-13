@@ -280,18 +280,38 @@
 
 //EXERCISE: OBJECT PROPERTIES ONLY STRING PRINT
 
-const movie = {
-    name : '12th fail',
-    year : 2023,
-    ratings : 5,
-    director :'abc'
-};
+// const movie = {
+//     name : '12th fail',
+//     year : 2023,
+//     ratings : 5,
+//     director :'abc'
+// };
 
-showProperty(movie);
+// showProperty(movie);
 
-function showProperty(obj){
-for( let property in obj){
-    if(typeof obj[property] === 'string')
-        console.log(property,obj[property]);
-}
+// function showProperty(obj){
+// for( let property in obj){
+//     if(typeof obj[property] === 'string')
+//         console.log(property,obj[property]);
+// }
+// }
+
+
+//EXERCISE: SUM OF MULTIPLES OF 3 AND 5 UPTO THE LIMIT
+
+
+const limit = 100;
+
+console.log(sum(limit));
+
+function sum(no){
+ let i = 0;
+ let sum=0;
+ while(i<=no){
+    if(i%3 === 0 || i%5 === 0){
+        sum += i;
+    }
+    i++;
+ }
+ return sum;
 }

@@ -349,3 +349,17 @@
 
 //    return 'A';
 // }
+
+//EXERCISE: PRINT STARS
+
+
+// showStars(5);
+// function showStars(rows){
+//     for(let i=1; i<=rows; i++ ){
+//         let pattern = '';
+//         for(let j=0; j<i; j++){
+//             pattern = pattern + '*';
+//         }
+//         console.log(pattern);
+//     }
+// }

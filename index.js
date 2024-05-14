@@ -300,7 +300,7 @@
 //EXERCISE: SUM OF MULTIPLES OF 3 AND 5 UPTO THE LIMIT
 
 
-// const limit = 100;
+// const limit = 20;
 
 // console.log(sum(limit));
 
@@ -363,3 +363,6 @@
 //         console.log(pattern);
 //     }
 // }
+
+
+//EXERCISE: DISPLAY PRIME NUMBERS

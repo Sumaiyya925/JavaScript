@@ -300,18 +300,52 @@
 //EXERCISE: SUM OF MULTIPLES OF 3 AND 5 UPTO THE LIMIT
 
 
-const limit = 100;
+// const limit = 100;
 
-console.log(sum(limit));
+// console.log(sum(limit));
 
-function sum(no){
- let i = 0;
- let sum=0;
- while(i<=no){
-    if(i%3 === 0 || i%5 === 0){
-        sum += i;
-    }
-    i++;
- }
- return sum;
-}
+// function sum(no){
+//  let i = 0;
+//  let sum=0;
+//  while(i<=no){
+//     if(i%3 === 0 || i%5 === 0){
+//         sum += i;
+//     }
+//     i++;
+//  }
+//  return sum;
+// }
+
+//EXERCISE: CALCULATE GRADE OF THE STUDENT
+
+// const marks = [100,100,100];
+
+// let Grade = console.log('THE GRADE OF STUDENT ARE: ',calculateGrade(marks),);
+
+
+
+// function calculateGrade(marks){
+
+//     let sum = 0;
+    
+
+//    for(let key of marks){
+//     sum = sum + key;
+//    }
+
+//    let average = sum / marks.length;
+
+//    if(average<60)
+//     return 'FAILED';
+   
+//    if(average<70)
+//     return 'D';
+
+//    if(average<80)
+//     return 'C';
+
+//    if(average<90)
+//     return 'B';
+
+//    return 'A';
+// }

@@ -383,26 +383,26 @@
 
 //OBJECTS
 
-//FACTORY FUNCTIONS
+//FACTORY FUNCTION
 
-// function createCircle(radius,diameter,string){
-//     if the key and value are same we can just write radius instead of radius:value
-//     return{
-//         radius,
-//         diameter,
-//         draw(){
-//             console.log(string);
-//         }
-//     };
-// }
+function createCircle(radius,diameter,string){
+    // if the key and value are same we can just write radius instead of radius:value
+    return{
+        radius,
+        diameter,
+        draw(){
+            console.log(string);
+        }
+    };
+}
 
-// const obj1 = createCircle(1,2,'circle');
-// console.log(obj1);
-// obj1.draw();
+const obj1 = createCircle(1,2,'circle');
+console.log(obj1);
+obj1.draw();
 
-// const obj2 = createCircle(34,50,'rectangle');
-// console.log(obj2);
-// obj2.draw();
+const obj2 = createCircle(34,50,'rectangle');
+console.log(obj2);
+obj2.draw();
 
 //CONSTRUCTOR FUNCTION
 
@@ -411,12 +411,12 @@
 //2:It points "this" to the empty object
 //3:It return "this" keyword
 
-function Circle(radius){
-    this.radius = radius;
-    this.draw = function(){
-        console.log("Constructor Function");
-    }
-}
+// function Circle(radius){
+//     this.radius = radius;
+//     this.draw = function(){
+//         console.log("Constructor Function");
+//     }
+// }
 
-const obj3 = new Circle(1);
-console.log(Circle);
+// const obj3 = new Circle(1);
+// console.log(Circle);

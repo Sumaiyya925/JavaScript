@@ -457,12 +457,12 @@
 
 //THREE WAYS TO MAKE CLONE OF THE OBJECT
 
-const circle = {
-    radius :1,
-    draw(){
-        console.log("clone");
-    }
-};
+// const circle = {
+//     radius :1,
+//     draw(){
+//         console.log("clone");
+//     }
+// };
 
 // const clone={};
 
@@ -482,3 +482,22 @@ const circle = {
 
 // const clone = {...circle};
 // console.log(clone);
+
+//EXERCISE:MAKE ADDRESS OBJECT
+
+let address ={
+    street:'a',
+    city:'Karachi',
+    zipCode:'c'
+};
+
+newAddress(address);
+
+function newAddress(address){
+for(let key in address){
+    console.log(key,address[key]);
+}
+}
+
+
+

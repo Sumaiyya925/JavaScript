@@ -485,19 +485,43 @@
 
 //EXERCISE:MAKE ADDRESS OBJECT
 
-let address ={
-    street:'a',
-    city:'Karachi',
-    zipCode:'c'
-};
+// let address ={
+//     street:'a',
+//     city:'Karachi',
+//     zipCode:'c'
+// };
 
-newAddress(address);
+// newAddress(address);
 
-function newAddress(address){
-for(let key in address){
-    console.log(key,address[key]);
+// function newAddress(address){
+// for(let key in address){
+//     console.log(key,address[key]);
+// }
+// }
+
+
+//EXERCISE:MAKE ADDRESS OBJECT USING FACTORY AND CONSTRUCTOR FUNCTION
+
+
+//FACTORY FUNCTION
+function address(street,city,zipCode){
+    return {
+         street,
+         city,
+         zipCode
+    };
 }
+
+const addressobj1 = address('a','Karachi','b');
+console.log(addressobj1);
+
+//CONSTRUCTOR FUNCTION
+
+function ShowAdress(street,city,zipCode){
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
 }
 
-
-
+const addressobj2 = new ShowAdress('abc','bali','b');
+console.log(addressobj2);

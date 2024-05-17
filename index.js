@@ -546,3 +546,48 @@
 
 // console.log("BOTH ARE SAME OBJECTS IN THE MEMORY?");
 // console.log("ANSWER:",areSame(addressobj2,adddressobj3) );
+
+
+
+//NEW CHAPTER ****ARRAYS****
+
+//ADD ELEMEMT TO THE START END AND IN MIDDLE OF THE ARRAYS
+
+// const array = [2,3,4];
+
+
+
+//use push to insert at the end
+// array.push(10,8);
+
+
+//use splice to insert in middle
+// array.splice(3,0,'new');
+
+
+//use unshift to insert at the beginning
+
+// array.unshift(54,93);
+// console.log(array);
+
+
+//TO FIND THE ELEMENTS IN NON-PRIMITIVE DATATYPES
+
+
+//an array of multiple objects
+
+
+//we have to find the element th contains abc course name for which we need to make function and pass 
+//array into it inside the find function
+
+// const courses = [
+//     {id : 1, name : 'a'},
+//     {id :2,  name : 'b'}
+
+// ];
+
+// let course = courses.findIndex(function(courses){
+//     return courses.name === 'b';
+// })
+
+// console.log(course);

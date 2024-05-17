@@ -425,31 +425,60 @@
 //we use for in loop for object and for of loop for arrays generally but we can also use for of 
 //loop for object like:
 
-const circle ={
-    radius : 1,
-    diameter :2
-};
+// const circle ={
+//     radius : 1,
+//     diameter :2
+// };
 
-for(let key in circle){
-    console.log(key,circle[key]);
-}
+// for(let key in circle){
+//     console.log(key,circle[key]);
+// }
 
 // for(let key2 of circle){
 //     console.log(key2); //it's not iterable so we can use Object.keys and Object.entries
 // }
 
-for(let key of Object.keys(circle)){
-    console.log(key);
-}
+// for(let key of Object.keys(circle)){
+//     console.log(key);
+// }
 
 //Object.entries also show the values
 
-for(let entry of Object.entries(circle)){
-    console.log(entry);
-}
+// for(let entry of Object.entries(circle)){
+//     console.log(entry);
+// }
 
 
 //we use in operator to find whether a particular property is in the object or not
 
-if('diameter' in circle)
-    console.log('yes');
+// if('diameter' in circle)
+//     console.log('yes');
+
+
+//THREE WAYS TO MAKE CLONE OF THE OBJECT
+
+const circle = {
+    radius :1,
+    draw(){
+        console.log("clone");
+    }
+};
+
+// const clone={};
+
+// for(let key in circle){
+//     clone[key] = circle[key];
+// }
+
+// console.log(clone);
+
+//second way
+// where {} is the target object it can have some proprtities as well
+// const clone = Object.assign({diameter:2},circle);
+
+// console.log(clone);
+
+//third way is to use spread operator i.e ...
+
+// const clone = {...circle};
+// console.log(clone);

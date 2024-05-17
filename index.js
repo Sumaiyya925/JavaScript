@@ -591,3 +591,36 @@
 // })
 
 // console.log(course);
+
+//COMBINING AND SLICING TWO ARRAYS
+
+// let first = [1,2,3];
+// let second = [4,5,6];
+
+// let combined = first.concat(second);
+
+// console.log(combined);
+
+//we can also use spread operator instead of concat faida ye k we can add anything in between as well
+
+// let combined = [...first,'add',...second];
+// console.log(combined);
+
+//sliced is kinda extracting from the array to an another array
+
+// let sliced = combined.slice(2,5);
+// let sliced = combined.slice(2);
+// console.log(sliced);
+
+//for primitive values the values are copied but for non primitives the address is copied like the objects are itslef not copied
+
+
+//we can also use forEach method for iterating the array instead of using for of loop
+//we can also show the index of each element by passing the index as well
+
+
+const array = [23,4,56,78];
+
+array.forEach(function(array,index){
+    console.log(index,array);
+})

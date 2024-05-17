@@ -504,24 +504,45 @@
 
 
 //FACTORY FUNCTION
-function address(street,city,zipCode){
-    return {
-         street,
-         city,
-         zipCode
-    };
-}
+// function address(street,city,zipCode){
+//     return {
+//          street,
+//          city,
+//          zipCode
+//     };
+// }
 
-const addressobj1 = address('a','Karachi','b');
-console.log(addressobj1);
+// const addressobj1 = address('a','Karachi','b');
+// console.log(addressobj1);
 
 //CONSTRUCTOR FUNCTION
 
-function ShowAdress(street,city,zipCode){
-    this.street = street;
-    this.city = city;
-    this.zipCode = zipCode;
-}
+// function ShowAdress(street,city,zipCode){
+//     this.street = street;
+//     this.city = city;
+//     this.zipCode = zipCode;
+// }
 
-const addressobj2 = new ShowAdress('abc','bali','b');
-console.log(addressobj2);
+// const addressobj2 = new ShowAdress('abc','bali','b');
+// const adddressobj3 = new ShowAdress('abc','bali','b');
+
+
+//FUNCTION TO SHOW IF BOTH HAVE SAME PROPERTIES
+
+// function areEqual(addressobj2,adddressobj3){
+//     return addressobj2.street === adddressobj3.street &&
+//     addressobj2.city === adddressobj3.city &&
+//     addressobj2.zipCode === adddressobj3.zipCode;
+// }
+
+// console.log("EQUAL FUNCTION PROPERTY WISE?");
+
+// console.log("ANSWER",areEqual(addressobj2,adddressobj3));
+
+// function areSame(address1,address2){
+//   return address1 === address2;  
+// }
+ 
+
+// console.log("BOTH ARE SAME OBJECTS IN THE MEMORY?");
+// console.log("ANSWER:",areSame(addressobj2,adddressobj3) );

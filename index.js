@@ -659,3 +659,27 @@
 
 // let combined = parts.join('-');
 // console.log(combined);
+
+
+//SORTING ARRAYS
+
+// const array = [50,40,30,20,25,35,45,55];
+// array.sort();
+// console.log(array);
+
+//but what if we have an array of objects
+// const courses = [
+//      {id : 1, name : 'node.js'},
+//      {id : 2, name : 'javaScript'}
+// ];
+
+// courses.sort(function(a,b){
+//     let nameA = a.name.toLowerCase;
+//     let nameB = b.name.toLowerCase;
+
+//     if(nameA < nameB) return -1;
+//     if(nameA > nameB) return 1;
+//     return 0;
+// });
+
+// console.log(courses);

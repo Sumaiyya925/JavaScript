@@ -726,10 +726,26 @@
 
 //chaining
 
-const numbers = [1,-1,2,3];
+// const numbers = [1,-1,2,3];
 
-const filteredAndMapped = numbers.
-filter(n => n >= 0).
-map(n => ({value : n}));
+// const filteredAndMapped = numbers.
+// filter(n => n >= 0).
+// map(n => ({value : n}));
 
-console.log(filteredAndMapped);
+// console.log(filteredAndMapped);
+
+//REDUCING AN ARRAY
+//we use reduce method to reduce an array into a single value
+
+//here accumulator acts exacly like how we let a sum variable and initialized it to zero
+//by not initializing accumulator to 0 it will initialize with the first value of the array and currentValue with -1 and
+//addition is performed
+
+// const number = [1,-1,4,5];
+
+// const sum  = number.reduce((accumulator,currentValue) =>  (accumulator + currentValue) ,0);
+// const sum = number.reduce((accumulator,currentValue) => (accumulator + currentValue));
+
+// console.log(sum);
+
+//its more cleaner then using the basic typical method for adding the numbers of the array

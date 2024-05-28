@@ -768,16 +768,42 @@
 //MAKE THE INCLUDE FUNCTION
 
 
-const array = [1,2,3,4,100];
+// const array = [1,2,3,4,100];
 
-console.log(includes(array,100))
+// console.log(includes(array,100))
 
-function includes(number,key){
+// function includes(number,key){
 
-    for(let element of number)
-        if(element===key)
-            return true;
-        return false;  
+//     for(let element of number)
+//         if(element===key)
+//             return true;
+//         return false;  
 
+// }
+
+//EXERCISE 02: EXCLUDE THE GIVEN NUMBER FROM THE ARRAY
+
+// const numbers = [1,2,3,4,56];
+// const output = except(numbers,1);
+// console.log(output);
+// function except(array,excluded){
+//    const index = array.findIndex(function(key){
+//     return key === excluded ;
+//    })
+
+//    array.splice(index,1);
+//    return array;
+// }
+
+//EXERCISE 02(B):EXCLUDE THE GIVEN ARRAY FROM THE ORIGINAL ARRAY
+
+const numbers = [1,2,3,4];
+const output = except(numbers,[1,2]);
+console.log(output);
+function except(array,excluded){
+    let output = [];
+    for(let element of array)
+        if(!excluded.includes(element))
+            output.push(element);
+        return output;
 }
-

@@ -683,3 +683,17 @@
 // });
 
 // console.log(courses);
+
+
+//EVERY AND SOME METHOD
+
+//every checks that all the elements in the array should meet the condition
+//while some checks that atleast one should meet the condition
+
+const number = [-23,-45,-8,4];
+
+let atleastOnePosiitve = number.some(function(value){
+    return value >= 0;
+})
+
+console.log(atleastOnePosiitve);

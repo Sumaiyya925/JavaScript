@@ -690,10 +690,17 @@
 //every checks that all the elements in the array should meet the condition
 //while some checks that atleast one should meet the condition
 
-const number = [-23,-45,-8,4];
+// const number = [-23,-45,-8,4];
 
-let atleastOnePosiitve = number.some(function(value){
-    return value >= 0;
-})
+// let atleastOnePosiitve = number.some(value => value >= 0);
 
-console.log(atleastOnePosiitve);
+// console.log(atleastOnePosiitve);
+
+//FILTER METHOD
+//this methods adds only those elements to a new array and returns it that meets the condition hence filtering the array
+
+// const array = [1,-234,89,90,100];
+
+// const filtered = array.filter(value => value >= 0);
+
+// console.log(filtered);

@@ -532,7 +532,7 @@
 // function areEqual(addressobj2,adddressobj3){
 //     return addressobj2.street === adddressobj3.street &&
 //     addressobj2.city === adddressobj3.city &&
-//     addressobj2.zipCode === adddressobj3.zipCode;
+//     addressobj2.zipCode === adddressobj3.zipCode; 
 // }
 
 // console.log("EQUAL FUNCTION PROPERTY WISE?");
@@ -570,6 +570,9 @@
 // array.unshift(54,93);
 // console.log(array);
 
+//we use "indexOf or includes operator to find whether a particular number or character is in the array or not if yes then result is
+// the index otherwise it will return -1"
+
 
 //TO FIND THE ELEMENTS IN NON-PRIMITIVE DATATYPES
 
@@ -577,39 +580,50 @@
 //an array of multiple objects
 
 
-//we have to find the element th contains abc course name for which we need to make function and pass 
+//we have to find the element that contains abc course name for which we need to make function and pass 
 //array into it inside the find function
 
 // const courses = [
-//     {id : 1, name : 'a'},
-//     {id :2,  name : 'b'}
-
+//     {id : 1, name : 'abc'},
+//     {id : 2, name : 'xyz'}
 // ];
 
-// let course = courses.findIndex(function(courses){
-//     return courses.name === 'b';
+// const requiredCourse = courses.findIndex(function(element){
+//     return element.name === 'abc';
 // })
 
-// console.log(course);
+// console.log(requiredCourse);
+
+//ARROW SYNTAX
+// in this syntax we remove the function keyword then we add arrow in front of the parameter of the function
+// if there is only single parameter then we can remove the brackets around the parameter
+// if there is only a single in the function then can also remove the return keyword and curly brackets
+
+// const requiredCourses = courses.find(element => element.name === 'xyz');
+// console.log(requiredCourses);
+
+//REMOVE ELEMENTS
+//use pop to delete the last element and shift to remove from the begining and splice for middle
+
 
 //COMBINING AND SLICING TWO ARRAYS
 
-// let first = [1,2,3];
-// let second = [4,5,6];
+// const first = [1,2,11];
+// const second = [4,5,6];
 
-// let combined = first.concat(second);
-
+// const combined = first.concat(second);
 // console.log(combined);
 
 //we can also use spread operator instead of concat faida ye k we can add anything in between as well
 
-// let combined = [...first,'add',...second];
-// console.log(combined);
+// const combined = [...first,'add',...second];
+// const copy = [...combined];
+// console.log(copy);
 
 //sliced is kinda extracting from the array to an another array
 
 // let sliced = combined.slice(2,5);
-// let sliced = combined.slice(2);
+//  sliced = combined.slice(2);
 // console.log(sliced);
 
 //for primitive values the values are copied but for non primitives the address is copied like the objects are itslef not copied
@@ -619,8 +633,29 @@
 //we can also show the index of each element by passing the index as well
 
 
-const array = [23,4,56,78];
+// const numbers = [23,45,7,98];
 
-array.forEach(function(array,index){
-    console.log(index,array);
-})
+// numbers.forEach(function(number,index){
+//     console.log(index,number);
+// })
+
+//using arrow syntax
+
+// numbers.forEach((number,index) => console.log(index,number));
+
+
+//**** AFTER MIDS ****
+
+//join and split
+
+// const number = [12,23,45];
+
+// const joined = number.join('-');
+// console.log(joined);
+
+// let msg = 'this is message';
+// let parts = msg.split(' ');
+// console.log(parts);
+
+// let combined = parts.join('-');
+// console.log(combined);

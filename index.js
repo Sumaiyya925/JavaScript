@@ -749,3 +749,18 @@
 // console.log(sum);
 
 //its more cleaner then using the basic typical method for adding the numbers of the array
+
+//EXERCISE 01
+//SHOW THE NUMBERS FROM THE GIVEN RANGE
+
+function arrayFromRange(min,max){
+
+    const output = [];
+    for(let i=min; i<=max; i++)
+        output.push(i);
+    return output;
+
+}
+const numbers = arrayFromRange(2,4);
+
+console.log(numbers);

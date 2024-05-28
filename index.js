@@ -753,14 +753,31 @@
 //EXERCISE 01
 //SHOW THE NUMBERS FROM THE GIVEN RANGE
 
-function arrayFromRange(min,max){
+// function arrayFromRange(min,max){
 
-    const output = [];
-    for(let i=min; i<=max; i++)
-        output.push(i);
-    return output;
+//     const output = [];
+//     for(let i=min; i<=max; i++)
+//         output.push(i);
+//     return output;
+
+// }
+// const numbers = arrayFromRange(2,4);
+
+// console.log(numbers);
+
+//MAKE THE INCLUDE FUNCTION
+
+
+const array = [1,2,3,4,100];
+
+console.log(includes(array,100))
+
+function includes(number,key){
+
+    for(let element of number)
+        if(element===key)
+            return true;
+        return false;  
 
 }
-const numbers = arrayFromRange(2,4);
 
-console.log(numbers);

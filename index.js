@@ -699,8 +699,37 @@
 //FILTER METHOD
 //this methods adds only those elements to a new array and returns it that meets the condition hence filtering the array
 
-// const array = [1,-234,89,90,100];
-
+// const array = [12,-1,23,45];
 // const filtered = array.filter(value => value >= 0);
 
-// console.log(filtered);
+
+
+//MAP METHOD
+//we use this to map each element in an array to something else
+
+
+//here we are mapping the values to a string
+// const items = filtered.map(n => '<li>' + n + '</li>' 
+// );
+// console.log(items);
+//joining these parts
+
+// const html = '<ul>' +  items.join(' ') + '</ul>';
+// console.log(html);
+
+//we can also map them in an object 
+//like mapping these values to an object with the property value
+
+// const items = filtered.map(n => ({value : n }));
+
+// console.log(items);
+
+//chaining
+
+const numbers = [1,-1,2,3];
+
+const filteredAndMapped = numbers.
+filter(n => n >= 0).
+map(n => ({value : n}));
+
+console.log(filteredAndMapped);

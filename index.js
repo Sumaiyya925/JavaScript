@@ -1012,3 +1012,53 @@
 // }
 
 // console.log(interest(10000));
+
+//GETTERS AND SETTERS
+
+//getters : access properties
+//setters : change the properties
+//template literals ${} is just an another way to show the full names like normally we do like adding strings and with a space with them
+
+// const person = {
+//     firstName : 'Mosh',
+//     lastName : 'hamedani',
+    //I want to show the full name for this making getter method
+    //by using get I can call full name like a property if I didnt use get it will be called as a method
+
+    // get fullname(){
+    //     return `${person.firstName} ${person.lastName}`;
+    // },
+
+    //suppose if I want to change the full name in such a way that name is given outside the function
+    //and it will be splited and set as first and last name so for this we make setter function
+
+//     set fullName(value){
+//         const parts = value.split(' ');
+//         this.firstName = parts[0];
+//         this.lastName = parts[1];
+
+//     }
+// };
+
+// person.fullName = 'John Smith';
+
+// console.log(person.fullname);
+
+
+//PRACTICE
+// const person = {
+//     firstName : 'Sumaiyya',
+//     lastName : 'Farhat',
+//     get fullName(){
+//         return `${person.firstName} ${person.lastName}`;
+//     },
+
+//     set fullName(newName){
+//         const parts = newName.split(' ');
+//         this.firstName = parts[0];
+//         this.lastName = parts[1];
+//     }
+// };
+// //so now I can get the name and change the name using setter function
+// person.fullName = 'sumaiyya nazeer';
+// console.log(person);

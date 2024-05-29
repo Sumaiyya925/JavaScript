@@ -1062,3 +1062,28 @@
 // //so now I can get the name and change the name using setter function
 // person.fullName = 'sumaiyya nazeer';
 // console.log(person);
+
+//EXERCISE 01:  SUM OF NUMBERS PASSED AS ARRAY
+
+
+
+// function sum (...items){
+//     return items.reduce((a,b) => a + b);
+// }
+
+// console.log(sum(1,2,3,4));
+
+//but ehat if we pass array of numbers?
+
+// function sum (...items){
+//     if(items.length === 1 && Array.isArray(items[0]))
+//         items = [...items[0]];
+//     return items.reduce((a,b) => a + b);
+// }
+
+// console.log(sum([1,2,3,4,10]));
+//we get the same array in output because our rest operator converts the argument into an array thats why its not 
+//adding the numbers. array this is made by rest operator has first element that has our original array so in order to
+//get the sum we need to make a condition that is we need to check if the array made by the rest has single element 
+//and if that element is array itself so array of array hone k bajaye we can have just a single array of numbers
+//for that we use spread operator

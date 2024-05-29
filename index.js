@@ -1087,3 +1087,19 @@
 //get the sum we need to make a condition that is we need to check if the array made by the rest has single element 
 //and if that element is array itself so array of array hone k bajaye we can have just a single array of numbers
 //for that we use spread operator
+
+
+//EXERCISE 03: AREA OF CIRCLE
+
+const circle ={
+    radius : 1,
+
+    //read only
+    get area(){
+        return Math.PI * this.radius * this.radius;
+    }
+};
+
+circle.radius = 2;
+
+console.log(circle.area);

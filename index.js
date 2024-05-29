@@ -980,3 +980,14 @@
 
 //  let move = run;
 //  move();
+
+//ARGUEMENT CHARACTERISTIC IN FUNCTION
+
+function sum(){
+let total = 0;
+for( let value of arguments)
+    total += value;
+return total;
+}
+
+console.log(sum(10,10,10,10));

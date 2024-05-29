@@ -797,13 +797,67 @@
 
 //EXERCISE 02(B):EXCLUDE THE GIVEN ARRAY FROM THE ORIGINAL ARRAY
 
-const numbers = [1,2,3,4];
-const output = except(numbers,[1,2]);
-console.log(output);
-function except(array,excluded){
-    let output = [];
-    for(let element of array)
-        if(!excluded.includes(element))
-            output.push(element);
-        return output;
+// const numbers = [1,2,3,4];
+// const output = except(numbers,[1,2]);
+// console.log(output);
+// function except(array,excluded){
+//     let output = [];
+//     for(let element of array)
+//         if(!excluded.includes(element))
+//             output.push(element);
+//         return output;
+// }
+
+//EXERCISE 03:SWAPPING IN ARRAY
+
+// const numbers = [1,2,3,4];
+
+// const output = move(numbers,3,-1);
+
+// console.log(output);
+
+// function move(array,index,offset){
+
+//     if(offset < 0){
+//         offset = offset + index;
+//     }
+
+//     if(offset < array.length && offset >= 0){
+//         let temp = array[index]; 
+//         array[index] = array[offset];
+//         array[offset] = temp;
+//         return array;
+//     }
+
+//     else
+//     console.log('INVALID OFFSET');
+
+// }
+
+//EXERCISE 04:COUNT OCCURENCES
+
+const numbers = [1,2,3,4,1,1,1];
+const count = countOccurrences(numbers,1);
+console.log(count);
+
+function countOccurrences(array,searchElement){
+    // let count = 0;
+    // for(let key of array){
+    //     if(key === searchElement)
+    //         count++;
+
+    // }
+    // return count;
+
+    //REDUCE METHOD
+
+    //accumulator is the count i.e how many times a number is occured
+    //currentValue is compared with the search element if they are equal we should return accumulator+1
+
+    return array.reduce((accumulator,currentValue) => {
+        const occurence = (currentValue === searchElement) ? 1 : 0;
+        console.log(accumulator,currentValue,searchElement);
+        return accumulator + occurence;
+    }, 0);
+
 }

@@ -938,3 +938,45 @@
  //   })
 
                            
+
+
+ //****** NEW CHAPTER : FUNCTIONS *******/
+
+
+ //two ways to declare a function
+
+ //FUNCTION DECLARATION
+ //we can call this function before declaring it because of hoisting
+
+ //hoisting is the process in which the javascript engine moves the function declartions to the top of the file
+
+//  walk();
+
+//  function walk(){
+//     console.log('walk');
+//  }
+
+ //FUNCTION EXPRESSION
+
+ //functions are objects
+
+ //it is anonymous function expression
+
+ //we cannot call the function before its declaration if we declared it as function expression
+
+//  run();
+//  let run = function(){
+//     console.log(run);
+//  };
+//named function expression
+//  let run1 = function walk(){
+//     console.log(run);
+//  };
+ 
+ //can call it normally
+
+//  run1();
+ //if we assign it to another variable then they both will reference to same functions
+
+//  let move = run;
+//  move();

@@ -904,3 +904,37 @@
 // }
 
 
+
+//EXERCISE 06 : SORTING MOVIES ACCORDING TO RATINGS
+
+// const movies = [
+//     { title: 'a', year: 2018, ratings: 4.5},
+//     { title: 'b', year: 2018, ratings: 4.7},
+//     { title: 'c', year: 2018, ratings: 3},
+//     { title: 'd', year: 2017, ratings: 4.5},
+
+// ];
+
+// const requiredTitles = movies.filter(m => m.year === 2018 && m.ratings > 4)
+// .sort((a,b) => a.ratings - b.ratings) //sort gives values in acsending order to using reverse as required in decsending order
+// .reverse() .map( m => m.title)
+// console.log(requiredTitles);
+
+//filter is used for making a new array of objects which contains movies of year 2018 and ratings > 4
+//sort is sorting the movies in acsending order
+//Mosh's question requirement was to show movies in descending order so reverse method is used
+//map is used to pick only the titles of those sorted movies
+
+
+
+ //   sort((a,b) => {
+                                
+ // if( a > b ) return 1;
+ // if( a < b ) return -1;
+// return 0;
+
+//we can just simply subtract a and b rating if we get positive value means a > b so we dont need three if conditions
+
+ //   })
+
+                           

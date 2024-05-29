@@ -836,11 +836,11 @@
 
 //EXERCISE 04:COUNT OCCURENCES
 
-const numbers = [1,2,3,4,1,1,1];
-const count = countOccurrences(numbers,1);
-console.log(count);
+// const numbers = [1,2,3,4,1,1,1];
+// const count = countOccurrences(numbers,1);
+// console.log(count);
 
-function countOccurrences(array,searchElement){
+// function countOccurrences(array,searchElement){
     // let count = 0;
     // for(let key of array){
     //     if(key === searchElement)
@@ -854,10 +854,53 @@ function countOccurrences(array,searchElement){
     //accumulator is the count i.e how many times a number is occured
     //currentValue is compared with the search element if they are equal we should return accumulator+1
 
-    return array.reduce((accumulator,currentValue) => {
-        const occurence = (currentValue === searchElement) ? 1 : 0;
-        console.log(accumulator,currentValue,searchElement);
-        return accumulator + occurence;
-    }, 0);
+    // return array.reduce((accumulator,currentValue) => {
+    //     const occurence = (currentValue === searchElement) ? 1 : 0;
+    //     console.log(accumulator,currentValue,searchElement);
+    //     return accumulator + occurence;
+    // }, 0);
 
-}
+// }
+
+//EXERCISE 05:GET MAX
+
+// const numbers = [5,2,6,900,8];
+// const max = getMax(numbers);
+// console.log(max);
+
+
+// function getMax(array){
+//     if(array.length === 0) return undefined;
+
+    // else{
+    //     let maxNumber = array[0];
+    //     for(let number of array){
+    //         if(maxNumber < number)
+    //             maxNumber = number;
+    //     }
+    //     return maxNumber;
+    // }
+
+
+   //USING REDUCE METHOD
+   //accumulator if not initialized with zero it is initialized with the first element of the array
+//    else{
+    //MY LOGIC
+    // return array.reduce((accumulator,current) => {
+    //     let maxNumber = accumulator;
+    //     maxNumber = (maxNumber < current) ? current : maxNumber;
+    //     console.log(accumulator,current);
+    //     return maxNumber;
+    // });
+
+    //MOSH'S LOGIC
+
+//     return array.reduce((accumulator,current) => {
+//         return (accumulator < current) ? current : accumulator;
+//     })
+   
+
+//    }
+// }
+
+

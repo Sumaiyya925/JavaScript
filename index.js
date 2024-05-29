@@ -983,11 +983,32 @@
 
 //ARGUEMENT CHARACTERISTIC IN FUNCTION
 
-function sum(){
-let total = 0;
-for( let value of arguments)
-    total += value;
-return total;
-}
+// function sum(){
+// let total = 0;
+// for( let value of arguments)
+//     total += value;
+// return total;
+// }
 
-console.log(sum(10,10,10,10));
+// console.log(sum(10,10,10,10));
+
+
+//REST OPERATOR(...)
+//it can take various values as arguments and it should be the last parameter while declaring the function
+
+// function sum(dicount, ...prices){
+//     const total = prices.reduce((a,b) => a+b);
+//     return total * (1-dicount);
+// }
+
+// console.log(sum(0.1,20,30));
+
+//DEFAULT PARAMETERS
+//for setting the parameters as default it is necesaary that default parameter should be the last one or
+//all the parameters after default one should also be default
+
+// function interest(principal,rate = 3.5,year = 5){
+//     return principal * rate/100 * year;
+// }
+
+// console.log(interest(10000));

@@ -7,15 +7,12 @@ function plusMinus(arr) {
   let zeroRatio = 0;
 
   for(let key of arr){
-    if(key > 0){
-        posCount++;
-    }
-    if(key < 0){
-        negCount++;
-    }
-    if( key === 0 ){
-        zeroCount++;
-    }
+    if(key > 0) posCount++;
+    
+    if(key < 0) negCount++;
+    //!key means falsey value and zero is falsey 
+    if( !key ) zeroCount++;
+    
     
   }
 

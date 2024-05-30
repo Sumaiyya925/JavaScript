@@ -1103,3 +1103,4 @@ const circle ={
 circle.radius = 2;
 
 console.log(circle.area);
+

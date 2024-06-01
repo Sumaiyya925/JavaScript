@@ -36,7 +36,6 @@
 // console.log('The type of the customer is: ');
 // console.log(typeOfCustomer);
 
-
 //EXERCISE
 
 // let a = 'red';
@@ -114,7 +113,6 @@
 //     i++;
 // }
 
-
 //for-in loop
 
 // let person={
@@ -126,7 +124,6 @@
 //     console.log(key,person[key]);
 // }
 
-
 //using for-in loop for arrays
 
 // const colors=['red','purple','green'];
@@ -136,14 +133,12 @@
 // }
 
 //In for-in loops we need to define both things bur by using for-of loop we only pass the keyword and this loop is essential to use for arrays
-//like we only passed the variable 
+//like we only passed the variable
 // const colors2 = ['red','green','purple'];
 
 // for(let color of colors2){
 //     console.log(color);
 // }
-
-
 
 //BREAK STATEMENT
 //jumps out of the loop
@@ -172,14 +167,13 @@
 //make a function that takes two numbers and gives the maximum of the two
 
 // function maxNumber(num1,num2){
-    // if(num1>num2)
-    //     return num1;
-    
-    // else
-    //    return num2;
+// if(num1>num2)
+//     return num1;
+
+// else
+//    return num2;
 
 //    return (num1>num2) ? num1 : num2;
-    
 
 // }
 //  let maxNum = maxNumber(93,199);
@@ -190,11 +184,10 @@
 
 // function isLandscape(width,height){
 
-    //we do not have to explicitly write true or false only return and condition can return true or false
+//we do not have to explicitly write true or false only return and condition can return true or false
 
 //     return (width > height);
 // }
-
 
 // console.log("result: ",isLandscape(900,500));
 
@@ -254,7 +247,7 @@
 //             const result = (i%2 === 0 ? '"EVEN"':'"ODD"');
 //         console.log(i,result);
 //         i++;
-    
+
 //     }
 
 // }
@@ -296,9 +289,7 @@
 // }
 // }
 
-
 //EXERCISE: SUM OF MULTIPLES OF 3 AND 5 UPTO THE LIMIT
-
 
 // const limit = 20;
 
@@ -322,12 +313,9 @@
 
 // let Grade = console.log('THE GRADE OF STUDENT ARE: ',calculateGrade(marks),);
 
-
-
 // function calculateGrade(marks){
 
 //     let sum = 0;
-    
 
 //    for(let key of marks){
 //     sum = sum + key;
@@ -337,7 +325,7 @@
 
 //    if(average<60)
 //     return 'FAILED';
-   
+
 //    if(average<70)
 //     return 'D';
 
@@ -352,7 +340,6 @@
 
 //EXERCISE: PRINT STARS
 
-
 // showStars(5);
 // function showStars(rows){
 //     for(let i=1; i<=rows; i++ ){
@@ -364,9 +351,7 @@
 //     }
 // }
 
-
 //EXERCISE: DISPLAY PRIME NUMBERS
-
 
 //  showPrimes(5);
 // function showPrimes(limit) {
@@ -379,7 +364,6 @@
 //   }
 //   return true;
 // }
-
 
 //OBJECTS
 
@@ -419,10 +403,9 @@
 // }
 
 // const obj3 = new Circle(1);
-// console.log(Circle); 
+// console.log(Circle);
 
-
-//we use for in loop for object and for of loop for arrays generally but we can also use for of 
+//we use for in loop for object and for of loop for arrays generally but we can also use for of
 //loop for object like:
 
 // const circle ={
@@ -448,12 +431,10 @@
 //     console.log(entry);
 // }
 
-
 //we use in operator to find whether a particular property is in the object or not
 
 // if('diameter' in circle)
 //     console.log('yes');
-
 
 //THREE WAYS TO MAKE CLONE OF THE OBJECT
 
@@ -499,9 +480,7 @@
 // }
 // }
 
-
 //EXERCISE:MAKE ADDRESS OBJECT USING FACTORY AND CONSTRUCTOR FUNCTION
-
 
 //FACTORY FUNCTION
 // function address(street,city,zipCode){
@@ -526,13 +505,12 @@
 // const addressobj2 = new ShowAdress('abc','bali','b');
 // const adddressobj3 = new ShowAdress('abc','bali','b');
 
-
 //FUNCTION TO SHOW IF BOTH HAVE SAME PROPERTIES
 
 // function areEqual(addressobj2,adddressobj3){
 //     return addressobj2.street === adddressobj3.street &&
 //     addressobj2.city === adddressobj3.city &&
-//     addressobj2.zipCode === adddressobj3.zipCode; 
+//     addressobj2.zipCode === adddressobj3.zipCode;
 // }
 
 // console.log("EQUAL FUNCTION PROPERTY WISE?");
@@ -540,14 +518,11 @@
 // console.log("ANSWER",areEqual(addressobj2,adddressobj3));
 
 // function areSame(address1,address2){
-//   return address1 === address2;  
+//   return address1 === address2;
 // }
- 
 
 // console.log("BOTH ARE SAME OBJECTS IN THE MEMORY?");
 // console.log("ANSWER:",areSame(addressobj2,adddressobj3) );
-
-
 
 //NEW CHAPTER ****ARRAYS****
 
@@ -555,15 +530,11 @@
 
 // const array = [2,3,4];
 
-
-
 //use push to insert at the end
 // array.push(10,8);
 
-
 //use splice to insert in middle
 // array.splice(3,0,'new');
-
 
 //use unshift to insert at the beginning
 
@@ -573,14 +544,11 @@
 //we use "indexOf or includes operator to find whether a particular number or character is in the array or not if yes then result is
 // the index otherwise it will return -1"
 
-
 //TO FIND THE ELEMENTS IN NON-PRIMITIVE DATATYPES
-
 
 //an array of multiple objects
 
-
-//we have to find the element that contains abc course name for which we need to make function and pass 
+//we have to find the element that contains abc course name for which we need to make function and pass
 //array into it inside the find function
 
 // const courses = [
@@ -605,7 +573,6 @@
 //REMOVE ELEMENTS
 //use pop to delete the last element and shift to remove from the begining and splice for middle
 
-
 //COMBINING AND SLICING TWO ARRAYS
 
 // const first = [1,2,11];
@@ -628,10 +595,8 @@
 
 //for primitive values the values are copied but for non primitives the address is copied like the objects are itslef not copied
 
-
 //we can also use forEach method for iterating the array instead of using for of loop
 //we can also show the index of each element by passing the index as well
-
 
 // const numbers = [23,45,7,98];
 
@@ -642,7 +607,6 @@
 //using arrow syntax
 
 // numbers.forEach((number,index) => console.log(index,number));
-
 
 //**** AFTER MIDS ****
 
@@ -659,7 +623,6 @@
 
 // let combined = parts.join('-');
 // console.log(combined);
-
 
 //SORTING ARRAYS
 
@@ -684,17 +647,16 @@
 
 // console.log(courses);
 
-
 //EVERY AND SOME METHOD
 
 //every checks that all the elements in the array should meet the condition
 //while some checks that atleast one should meet the condition
 
-// const number = [-23,-45,-8,4];
+const number = [-23, -45, -8, 4];
 
-// let atleastOnePosiitve = number.some(value => value >= 0);
+let atleastOnePosiitve = number.some((value) => value >= 0);
 
-// console.log(atleastOnePosiitve);
+console.log(atleastOnePosiitve);
 
 //FILTER METHOD
 //this methods adds only those elements to a new array and returns it that meets the condition hence filtering the array
@@ -702,14 +664,11 @@
 // const array = [12,-1,23,45];
 // const filtered = array.filter(value => value >= 0);
 
-
-
 //MAP METHOD
 //we use this to map each element in an array to something else
 
-
 //here we are mapping the values to a string
-// const items = filtered.map(n => '<li>' + n + '</li>' 
+// const items = filtered.map(n => '<li>' + n + '</li>'
 // );
 // console.log(items);
 //joining these parts
@@ -717,7 +676,7 @@
 // const html = '<ul>' +  items.join(' ') + '</ul>';
 // console.log(html);
 
-//we can also map them in an object 
+//we can also map them in an object
 //like mapping these values to an object with the property value
 
 // const items = filtered.map(n => ({value : n }));
@@ -767,7 +726,6 @@
 
 //MAKE THE INCLUDE FUNCTION
 
-
 // const array = [1,2,3,4,100];
 
 // console.log(includes(array,100))
@@ -777,7 +735,7 @@
 //     for(let element of number)
 //         if(element===key)
 //             return true;
-//         return false;  
+//         return false;
 
 // }
 
@@ -823,7 +781,7 @@
 //     }
 
 //     if(offset < array.length && offset >= 0){
-//         let temp = array[index]; 
+//         let temp = array[index];
 //         array[index] = array[offset];
 //         array[offset] = temp;
 //         return array;
@@ -841,24 +799,24 @@
 // console.log(count);
 
 // function countOccurrences(array,searchElement){
-    // let count = 0;
-    // for(let key of array){
-    //     if(key === searchElement)
-    //         count++;
+// let count = 0;
+// for(let key of array){
+//     if(key === searchElement)
+//         count++;
 
-    // }
-    // return count;
+// }
+// return count;
 
-    //REDUCE METHOD
+//REDUCE METHOD
 
-    //accumulator is the count i.e how many times a number is occured
-    //currentValue is compared with the search element if they are equal we should return accumulator+1
+//accumulator is the count i.e how many times a number is occured
+//currentValue is compared with the search element if they are equal we should return accumulator+1
 
-    // return array.reduce((accumulator,currentValue) => {
-    //     const occurence = (currentValue === searchElement) ? 1 : 0;
-    //     console.log(accumulator,currentValue,searchElement);
-    //     return accumulator + occurence;
-    // }, 0);
+// return array.reduce((accumulator,currentValue) => {
+//     const occurence = (currentValue === searchElement) ? 1 : 0;
+//     console.log(accumulator,currentValue,searchElement);
+//     return accumulator + occurence;
+// }, 0);
 
 // }
 
@@ -868,42 +826,37 @@
 // const max = getMax(numbers);
 // console.log(max);
 
-
 // function getMax(array){
 //     if(array.length === 0) return undefined;
 
-    // else{
-    //     let maxNumber = array[0];
-    //     for(let number of array){
-    //         if(maxNumber < number)
-    //             maxNumber = number;
-    //     }
-    //     return maxNumber;
-    // }
+// else{
+//     let maxNumber = array[0];
+//     for(let number of array){
+//         if(maxNumber < number)
+//             maxNumber = number;
+//     }
+//     return maxNumber;
+// }
 
-
-   //USING REDUCE METHOD
-   //accumulator if not initialized with zero it is initialized with the first element of the array
+//USING REDUCE METHOD
+//accumulator if not initialized with zero it is initialized with the first element of the array
 //    else{
-    //MY LOGIC
-    // return array.reduce((accumulator,current) => {
-    //     let maxNumber = accumulator;
-    //     maxNumber = (maxNumber < current) ? current : maxNumber;
-    //     console.log(accumulator,current);
-    //     return maxNumber;
-    // });
+//MY LOGIC
+// return array.reduce((accumulator,current) => {
+//     let maxNumber = accumulator;
+//     maxNumber = (maxNumber < current) ? current : maxNumber;
+//     console.log(accumulator,current);
+//     return maxNumber;
+// });
 
-    //MOSH'S LOGIC
+//MOSH'S LOGIC
 
 //     return array.reduce((accumulator,current) => {
 //         return (accumulator < current) ? current : accumulator;
 //     })
-   
 
 //    }
 // }
-
-
 
 //EXERCISE 06 : SORTING MOVIES ACCORDING TO RATINGS
 
@@ -925,30 +878,24 @@
 //Mosh's question requirement was to show movies in descending order so reverse method is used
 //map is used to pick only the titles of those sorted movies
 
+//   sort((a,b) => {
 
-
- //   sort((a,b) => {
-                                
- // if( a > b ) return 1;
- // if( a < b ) return -1;
+// if( a > b ) return 1;
+// if( a < b ) return -1;
 // return 0;
 
 //we can just simply subtract a and b rating if we get positive value means a > b so we dont need three if conditions
 
- //   })
+//   })
 
-                           
+//****** NEW CHAPTER : FUNCTIONS *******/
 
+//two ways to declare a function
 
- //****** NEW CHAPTER : FUNCTIONS *******/
+//FUNCTION DECLARATION
+//we can call this function before declaring it because of hoisting
 
-
- //two ways to declare a function
-
- //FUNCTION DECLARATION
- //we can call this function before declaring it because of hoisting
-
- //hoisting is the process in which the javascript engine moves the function declartions to the top of the file
+//hoisting is the process in which the javascript engine moves the function declartions to the top of the file
 
 //  walk();
 
@@ -956,13 +903,13 @@
 //     console.log('walk');
 //  }
 
- //FUNCTION EXPRESSION
+//FUNCTION EXPRESSION
 
- //functions are objects
+//functions are objects
 
- //it is anonymous function expression
+//it is anonymous function expression
 
- //we cannot call the function before its declaration if we declared it as function expression
+//we cannot call the function before its declaration if we declared it as function expression
 
 //  run();
 //  let run = function(){
@@ -972,11 +919,11 @@
 //  let run1 = function walk(){
 //     console.log(run);
 //  };
- 
- //can call it normally
+
+//can call it normally
 
 //  run1();
- //if we assign it to another variable then they both will reference to same functions
+//if we assign it to another variable then they both will reference to same functions
 
 //  let move = run;
 //  move();
@@ -991,7 +938,6 @@
 // }
 
 // console.log(sum(10,10,10,10));
-
 
 //REST OPERATOR(...)
 //it can take various values as arguments and it should be the last parameter while declaring the function
@@ -1022,15 +968,15 @@
 // const person = {
 //     firstName : 'Mosh',
 //     lastName : 'hamedani',
-    //I want to show the full name for this making getter method
-    //by using get I can call full name like a property if I didnt use get it will be called as a method
+//I want to show the full name for this making getter method
+//by using get I can call full name like a property if I didnt use get it will be called as a method
 
-    // get fullname(){
-    //     return `${person.firstName} ${person.lastName}`;
-    // },
+// get fullname(){
+//     return `${person.firstName} ${person.lastName}`;
+// },
 
-    //suppose if I want to change the full name in such a way that name is given outside the function
-    //and it will be splited and set as first and last name so for this we make setter function
+//suppose if I want to change the full name in such a way that name is given outside the function
+//and it will be splited and set as first and last name so for this we make setter function
 
 //     set fullName(value){
 //         const parts = value.split(' ');
@@ -1043,7 +989,6 @@
 // person.fullName = 'John Smith';
 
 // console.log(person.fullname);
-
 
 //PRACTICE
 // const person = {
@@ -1065,8 +1010,6 @@
 
 //EXERCISE 01:  SUM OF NUMBERS PASSED AS ARRAY
 
-
-
 // function sum (...items){
 //     return items.reduce((a,b) => a + b);
 // }
@@ -1082,25 +1025,23 @@
 // }
 
 // console.log(sum([1,2,3,4,10]));
-//we get the same array in output because our rest operator converts the argument into an array thats why its not 
+//we get the same array in output because our rest operator converts the argument into an array thats why its not
 //adding the numbers. array this is made by rest operator has first element that has our original array so in order to
-//get the sum we need to make a condition that is we need to check if the array made by the rest has single element 
+//get the sum we need to make a condition that is we need to check if the array made by the rest has single element
 //and if that element is array itself so array of array hone k bajaye we can have just a single array of numbers
 //for that we use spread operator
 
-
 //EXERCISE 03: AREA OF CIRCLE
 
-const circle ={
-    radius : 1,
+// const circle = {
+//   radius: 1,
 
-    //read only
-    get area(){
-        return Math.PI * this.radius * this.radius;
-    }
-};
+//   //read only
+//   get area() {
+//     return Math.PI * this.radius * this.radius;
+//   },
+// };
 
-circle.radius = 2;
+// circle.radius = 2;
 
-console.log(circle.area);
-
+// console.log(circle.area);

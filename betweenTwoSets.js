@@ -1,67 +1,21 @@
-// const numbers = [2, 6];
-// findMultiples(numbers);
+let a = [2, 6];
+let b = [24, 36];
 
-// function findMultiples(numbers) {
-//   for (let i = 0; i < numbers.length; i++) {
-//     for (let j = 1; j <= 10; j++) {
-//       console.log(numbers[i] * j);
-//     }
-//   }
-// }
+console.log(getTotalX(a, b));
 
-// function findFactors(number) {
-//   let array = [];
-//   for (let i = 0; i < number.length; i++) {
-//     for (let j = 2; j <= 15; j++) {
-//       if (numbers[i] % j === 0) {
-//         array = j;
-//       }
-//     }
-//     console.log(array);
-//   }
-// }
+function getTotalX(a, b) {
+  let min = Math.min(...a);
+  let max = Math.max(...b);
+  let count = 0;
 
-// const number = [2, 6];
-// findMultiple(number);
+  for (let i = min; i <= max; i++) {
+    let result1 = a.every((n) => i % n === 0);
+    let result2 = b.every((n) => n % i === 0);
 
-// function findMultiple(n) {
-//   let commonMultiple = [];
-//   for (let i = 0; i < n.length; i++) {
-//     let array = [];
-//     for (let j = 1; j <= 10; j++) {
-//       array.push(n[i] * j);
-//     }
-//     // if (i === 0) {
-//     //   commonMultiple = array;
-//     // }
-
-//     commonMultiple = commonMultiple.filter((n) => array.includes(n));
-
-//     console.log(commonMultiple);
-//   }
-// }
-
-//   let array = [];
-//   for (let i = 1; i <= 10; i++) {
-//     array.push(n * i);
-//   }
-//   console.log(array);
-
-let number = [2, 6];
-console.log(findCount(number));
-function findCount(array) {
-  let common = 0;
-  let commonArr = [];
-  for (let i = 0; i < array.length; i++) {
-    let arr = [];
-    for (let j = 1; j <= 10; j++) {
-      arr.push(array[i] * j);
-    }
-
-    for (let k = 0; k < arr.length; k++) {
-      if (arr[k] % array[i] === 0) {
-        common++;
-      }
-    }
+    if (result1 && result2) count++;
   }
+  return count;
 }
+
+//result === true can be written as result1 it means that this is truthy value and if written as !result1
+//then it is falsey values

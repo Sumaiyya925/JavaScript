@@ -28,7 +28,7 @@ function beautifulDays(i, j, k) {
       10
     );
     let difference = Math.abs(number - reversedNumber);
-    if (Number.isInteger(difference / k) === true) count++;
+    if (Number.isInteger(difference / k)) count++;
   }
   return count;
 }

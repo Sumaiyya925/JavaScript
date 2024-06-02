@@ -12,10 +12,3 @@ function circularArrayRotation(a, k, queries) {
   }
   return result;
 }
-
-// let arr = [3, 4, 5];
-
-// for (let i = 0; i < 2; i++) {
-//   arr.unshift(arr.pop());
-//   console.log(arr);
-// }

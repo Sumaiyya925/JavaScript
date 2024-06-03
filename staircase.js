@@ -15,8 +15,3 @@ function staircase(n) {
 }
 
 staircase(5);
-
-let s = "07:05:45AM";
-s = s.replace("AM", "");
-console.log(s.split(":"));
-//join with colon

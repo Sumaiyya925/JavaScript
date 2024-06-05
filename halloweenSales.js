@@ -1,28 +1,18 @@
+console.log(howManyGames(20, 3, 6, 85));
+
 function howManyGames(p, d, m, s) {
-  let i = 0;
-  let a = [];
-  // if (p < d) {
-  //   return Math.round((s - p) / m) + 1;
-  // } else if (p === m) {
-  //   return Math.floor(s / m);
-  // }
-  while (p - d > m) {
-    if (i === 0) {
-      p = p - 0;
-    } else {
-      p = p - d;
-    }
-    a.push(p);
-    i++;
-  }
-  return a;
-  let sum = a.reduce((a, b) => a + b);
+  let count = 0;
+  for (let i = p; i >= m; i -= d) {
+    if (s - i < 0) return count;
 
-  while (sum + m <= s) {
-    a.push(m);
-    sum += m;
+    s -= i;
+    count++;
   }
-  return a.length;
+
+  while (s >= 0) {
+    s -= m;
+    if (s < 0) break;
+    count++;
+  }
+  return count;
 }
-
-console.log(howManyGames(20, 3, 6, 80));

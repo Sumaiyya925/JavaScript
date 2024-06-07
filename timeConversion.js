@@ -1,4 +1,4 @@
-let str = "12:00:00AM";
+let str = "03:00:4PM";
 console.log(timeConversion(str));
 function timeConversion(s) {
   let a1 = s.split("");

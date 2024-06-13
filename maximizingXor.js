@@ -1,19 +1,16 @@
-let n = 11;
-let n2 = 12;
-let binary = n.toString(2);
-let binary1 = n2.toString(2);
-console.log(binary, binary1);
+// let l = 10;
+// let r = 15;
 
-let array1 = binary.toString().split("");
-let array2 = binary1.toString().split("");
-
-console.log(array1, array2);
-for (let i = 0; i < array1.length; i++) {
-  let ans;
-  if (array1[i] === array2[i]) {
-    ans = 0;
-  } else {
-    ans = 1;
+console.log(maximizingXor(65, 898));
+function maximizingXor(l, r) {
+  let max = 0;
+  for (let i = l; i <= r; i++) {
+    for (let j = i; j <= r; j++) {
+      let xor = i ^ j;
+      if (xor > max) {
+        max = xor;
+      }
+    }
   }
-  console.log(ans);
+  return max;
 }

@@ -10,7 +10,7 @@ function pangrams(t) {
   let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
   let filterArray = arr.filter((value, index) => arr.indexOf(value) === index);
   filterArray.splice(filterArray.indexOf(" "), 1);
-
+  console.log(filterArray.length);
   if (filterArray.length === alphabet.length) {
     return "pangram";
   } else {

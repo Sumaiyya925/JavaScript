@@ -1,4 +1,4 @@
-kaprekarNumbers(400, 700);
+kaprekarNumbers(1, 1000);
 function kaprekarNumbers(p, q) {
   let kaprekar = [];
   for (let i = p; i <= q; i++) {
@@ -17,9 +17,15 @@ function kaprekarNumbers(p, q) {
     }
   }
 
+  // kaprekar.sort((a, b) => a - b);
+  // if (kaprekar.length === 0) {
+  //   console.log("INVALID RANGE");
+  // } else {
+  //   console.log(kaprekar.join(" "));
+  // }
   kaprekar.sort((a, b) => a - b);
   if (kaprekar.length === 0) {
-    console.log("INVALID RANGE.");
+    console.log("INVALID RANGE");
   } else {
     console.log(kaprekar.join(" "));
   }
